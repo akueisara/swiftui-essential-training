@@ -13,12 +13,16 @@ struct ContentView: View {
 		print("hi")
 		return VStack {
 			Text("Huli Pizza Company")
+				.font(.title)
 			Image("Surf Board")
+				.resizable()
+				.scaledToFit()
 			Text("Order Pizza")
+				.font(.largeTitle)
 			Text(pizzas > 5 ? "Helloo Pizza!!!!" : "Hello World")
 			Spacer()
 		}
-			
+		.padding()
     }
 }
 
