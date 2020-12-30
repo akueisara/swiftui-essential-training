@@ -11,7 +11,14 @@ struct ContentView: View {
 	var pizzas: Int
     var body: some View {
 		print("hi")
-		return Text(pizzas > 5 ? "Helloo Pizza!!!!" : "Hello World")
+		return VStack {
+			Text("Huli Pizza Company")
+			Image("Surf Board")
+			Text("Order Pizza")
+			Text(pizzas > 5 ? "Helloo Pizza!!!!" : "Hello World")
+			Spacer()
+		}
+			
     }
 }
 
