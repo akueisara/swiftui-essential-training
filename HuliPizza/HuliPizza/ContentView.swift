@@ -9,18 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
 	var pizzas: Int
+	@State var isMenuDisplayed: Bool = true
     var body: some View {
 		print("hi")
 		return VStack {
 			Text(pizzas > 5 ? "Helloo Pizza!!!!" : "Hello World")
 			ContentHeadeView()
 				.layoutPriority(2)
-			PageTitleView(title: "Order Pizza")
+			Button(action:{self.isMenuDisplayed.toggle()}) {
+				PageTitleView(title: "Order Pizza", isDisplayingOrders: isMenuDisplayed)
+			}
 			MenuListView()
-				.layoutPriority(1)
+				.layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
 			OrderListView()
-				.layoutPriority(1)
-			Spacer()
+				.layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
+//			Spacer()
 		}
 		.padding()
     }
