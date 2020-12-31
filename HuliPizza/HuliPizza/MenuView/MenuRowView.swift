@@ -19,6 +19,7 @@ struct MenuRowView: View {
 				Text("Huli Chicken Pizza")
 					.font(.title)
 					.fontWeight(.light)
+					.truncationMode(.tail)
 				RatingsView()
 					.padding(.top, 8)
 			}
