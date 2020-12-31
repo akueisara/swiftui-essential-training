@@ -76,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				9CC62196259DDD6500648412 /* MenuListView.swift */,
-				9CC621B1259DF4AD00648412 /* ListHeaderView.swift */,
 				9CC6219F259DDEBC00648412 /* MenuRowView.swift */,
 				9CC621A2259DDF2000648412 /* RatingsView.swift */,
 			);
@@ -117,11 +116,12 @@
 				9CC6218E259DDCBF00648412 /* HistoryView */,
 				9CD241AB259CA942006E386E /* HuliPizzaApp.swift */,
 				9CD241AD259CA942006E386E /* ContentView.swift */,
+				9CC621B1259DF4AD00648412 /* ListHeaderView.swift */,
+				9CC62199259DDDBC00648412 /* ContentHeadeView.swift */,
+				9CC621A5259DDFA300648412 /* PageTitleView.swift */,
 				9CD241AF259CA944006E386E /* Assets.xcassets */,
 				9CD241B4259CA944006E386E /* Info.plist */,
 				9CD241B1259CA944006E386E /* Preview Content */,
-				9CC62199259DDDBC00648412 /* ContentHeadeView.swift */,
-				9CC621A5259DDFA300648412 /* PageTitleView.swift */,
 			);
 			path = HuliPizza;
 			sourceTree = "<group>";
