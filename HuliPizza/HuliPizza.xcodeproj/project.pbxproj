@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CC4C089259E017C006B4924 /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C088259E017C006B4924 /* SelectedImageView.swift */; };
 		9CC62193259DDCFE00648412 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC62192259DDCFE00648412 /* OrderListView.swift */; };
 		9CC62197259DDD6500648412 /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC62196259DDD6500648412 /* MenuListView.swift */; };
 		9CC6219A259DDDBC00648412 /* ContentHeadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC62199259DDDBC00648412 /* ContentHeadeView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CC4C088259E017C006B4924 /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
 		9CC62192259DDCFE00648412 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		9CC62196259DDD6500648412 /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
 		9CC62199259DDDBC00648412 /* ContentHeadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeadeView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				9CC621B1259DF4AD00648412 /* ListHeaderView.swift */,
 				9CC62199259DDDBC00648412 /* ContentHeadeView.swift */,
 				9CC621A5259DDFA300648412 /* PageTitleView.swift */,
+				9CC4C088259E017C006B4924 /* SelectedImageView.swift */,
 				9CD241AF259CA944006E386E /* Assets.xcassets */,
 				9CD241B4259CA944006E386E /* Info.plist */,
 				9CD241B1259CA944006E386E /* Preview Content */,
@@ -212,6 +215,7 @@
 				9CC621A0259DDEBC00648412 /* MenuRowView.swift in Sources */,
 				9CC621A6259DDFA300648412 /* PageTitleView.swift in Sources */,
 				9CC6219A259DDDBC00648412 /* ContentHeadeView.swift in Sources */,
+				9CC4C089259E017C006B4924 /* SelectedImageView.swift in Sources */,
 				9CC621A9259DF2BC00648412 /* HistoryRowView.swift in Sources */,
 				9CC621B2259DF4AD00648412 /* ListHeaderView.swift in Sources */,
 				9CC621A3259DDF2000648412 /* RatingsView.swift in Sources */,
