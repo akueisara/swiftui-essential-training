@@ -11,7 +11,7 @@ struct MenuListView: View {
     var body: some View {
 		VStack {
 			Text("Menu")
-			List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+			List(0 ..< 5) { item in
 				MenuRowView()
 			}
 		}
