@@ -13,15 +13,8 @@ struct MenuListView: View {
 		VStack {
 			ListHeaderView(text: "Menu")
 			List(menuList) { item in
-				HStack {
-					Spacer()
-					MenuRowView()
-						.frame(width: 230)
-					Text(item.name)
-						.multilineTextAlignment(.trailing)
-						.frame(minWidth: 50, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: 100)
-					Spacer()
-				}
+				MenuRowView(menuItem: item)
+					.listRowInsets(EdgeInsets())
 			}
 		}
     }
