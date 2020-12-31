@@ -14,6 +14,7 @@ struct ContentView: View {
 		return VStack {
 			Text(pizzas > 5 ? "Helloo Pizza!!!!" : "Hello World")
 			ContentHeadeView()
+			PageTitleView(title: "Order Pizza")
 			MenuListView()
 			OrderListView()
 			Spacer()

@@ -17,8 +17,6 @@ struct ContentHeadeView: View {
 				Text("Huli Pizza Company")
 					.font(.title)
 			}
-			Text("Order Pizza")
-				.font(.largeTitle)
 		}
     }
 }
@@ -28,3 +26,5 @@ struct ContentHeadeView_Previews: PreviewProvider {
         ContentHeadeView()
     }
 }
+
+
