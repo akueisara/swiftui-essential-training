@@ -15,8 +15,10 @@ struct HistoryDetailView: View {
         imageID = historyItem.id
         return VStack {
             PageTitleView(title: historyItem.name)
+			MapView(latitude: historyItem.latitude, longitude: historyItem.longitude, regionRadius: 1000000)
+				.frame(height: 100)
             Text(historyItem.history)
-                .frame(height:300)
+                .frame(height: 300)
             Spacer()
         }
     }
