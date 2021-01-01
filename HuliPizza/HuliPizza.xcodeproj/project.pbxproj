@@ -11,6 +11,7 @@
 		9C8BD82D259EE0AD006E3B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD82C259EE0AD006E3B0E /* AppDelegate.swift */; };
 		9C8BD830259EE0B2006E3B0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD82F259EE0B2006E3B0E /* SceneDelegate.swift */; };
 		9C8BD834259F00C2006E3B0E /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD833259F00C2006E3B0E /* HistoryDetailView.swift */; };
+		9C8BD837259F0666006E3B0E /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD836259F0666006E3B0E /* RootTabView.swift */; };
 		9CC4C089259E017C006B4924 /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C088259E017C006B4924 /* SelectedImageView.swift */; };
 		9CC4C08E259E0886006B4924 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C08B259E0886006B4924 /* MenuModel.swift */; };
 		9CC4C08F259E0886006B4924 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C08C259E0886006B4924 /* OrderModel.swift */; };
@@ -36,6 +37,7 @@
 		9C8BD82C259EE0AD006E3B0E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C8BD82F259EE0B2006E3B0E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9C8BD833259F00C2006E3B0E /* HistoryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		9C8BD836259F0666006E3B0E /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		9CC4C088259E017C006B4924 /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
 		9CC4C08B259E0886006B4924 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		9CC4C08C259E0886006B4924 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		9CD241AA259CA942006E386E /* HuliPizza */ = {
 			isa = PBXGroup;
 			children = (
+				9C8BD836259F0666006E3B0E /* RootTabView.swift */,
 				9C8BD82C259EE0AD006E3B0E /* AppDelegate.swift */,
 				9C8BD82F259EE0B2006E3B0E /* SceneDelegate.swift */,
 				9CC62191259DDCCF00648412 /* OrderView */,
@@ -228,6 +231,7 @@
 				9CC621AF259DF34E00648412 /* HistoryView.swift in Sources */,
 				9C8BD834259F00C2006E3B0E /* HistoryDetailView.swift in Sources */,
 				9C8BD82D259EE0AD006E3B0E /* AppDelegate.swift in Sources */,
+				9C8BD837259F0666006E3B0E /* RootTabView.swift in Sources */,
 				9CC4C08E259E0886006B4924 /* MenuModel.swift in Sources */,
 				9CD241AE259CA942006E386E /* ContentView.swift in Sources */,
 				9CC62197259DDD6500648412 /* MenuListView.swift in Sources */,
