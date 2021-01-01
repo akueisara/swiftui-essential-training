@@ -35,6 +35,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
 			ContentView(orderModel: OrderModel(), pizzas: 5)
+				.environmentObject(UserPreferences())
 			ContentView(orderModel: OrderModel(), pizzas: 6)
 				.colorScheme(.dark)
 				.background(Color.black)
