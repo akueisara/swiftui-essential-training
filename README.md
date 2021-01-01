@@ -1,1 +1,1 @@
-# swiftui-essential-training-lynda
+# SwiftUI Essential Training
