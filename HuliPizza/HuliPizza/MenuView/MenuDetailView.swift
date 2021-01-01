@@ -13,9 +13,10 @@ struct MenuDetailView: View {
 	@EnvironmentObject var settings: UserPreferences
 	@ObservedObject var orderModel: OrderModel
 	@State var didOrder: Bool = false
+	@State var quantity: Int = 1
     var menuItem:MenuItem
     var formattedPrice:String{
-        String(format:"%3.2f",menuItem.price)
+        String(format:"%3.2f", menuItem.price * Double(quantity))
     }
     func addItem(){
 //		orderModel.add(menuID: menuItem.id)
@@ -42,12 +43,16 @@ struct MenuDetailView: View {
 				Text(settings.size.formatted())
             }
             .font(.headline)
-            HStack{
-                Text("Quantity:")
-                Text("1")
-                    .bold()
-                Spacer()
-            }
+			Stepper(value: $quantity, in: 1...10) {
+				Text("Quantity: \(quantity)")
+					.bold()
+			}
+//            HStack{
+//                Text("Quantity:")
+//                Text("1")
+//                    .bold()
+//                Spacer()
+//            }
             .padding()
             HStack{
                 Text("Order:  \(formattedPrice)")
@@ -72,7 +77,7 @@ struct MenuDetailView: View {
 //					Alert(title: Text("Pizza Ordered"), message: Text("Your ordered a " + self.menuItem.name))
 //				}
 				.sheet(isPresented: $didOrder) {
-					ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel)
+					ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel, quantity: self.$quantity)
 				}
                 Spacer()
             }
@@ -86,5 +91,6 @@ struct MenuDetailView: View {
 struct MenuDetailView_Previews: PreviewProvider {
     static var previews: some View {
 		MenuDetailView(orderModel: OrderModel(), menuItem: testMenuItem)
+			.environmentObject(UserPreferences())
     }
 }
