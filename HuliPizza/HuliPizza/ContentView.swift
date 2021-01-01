@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 	var pizzas: Int
+	@State var orderModel: OrderModel
 	@State var isMenuDisplayed: Bool = true
     var body: some View {
 		print("hi")
@@ -32,8 +33,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
-			ContentView(pizzas: 5)
-			ContentView(pizzas: 6)
+			ContentView(pizzas: 5, orderModel: OrderModel())
+			ContentView(pizzas: 6, orderModel: OrderModel())
 				.colorScheme(.dark)
 				.background(Color.black)
 				.previewDevice("iPad Pro (9.7-inch)")
