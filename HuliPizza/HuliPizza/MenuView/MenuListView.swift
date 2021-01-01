@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MenuListView: View {
+	@Binding var orderModel: OrderModel
 	var menuList = MenuModel().menu
     var body: some View {
 		VStack {
@@ -15,7 +16,7 @@ struct MenuListView: View {
 			NavigationView {
 				List(menuList) { item in
 					NavigationLink(
-						destination: MenuDetailView(menuItem: item)) {
+						destination: MenuDetailView(orderModel: self.$orderModel, menuItem: item)) {
 						MenuRowView(menuItem: item)
 							.listRowInsets(EdgeInsets())
 					}
@@ -27,11 +28,7 @@ struct MenuListView: View {
 
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuListView()
-		MenuListView()
-			.colorScheme(.dark)
-			.background(Color.black)
-			.previewDevice("iPad Pro (9.7-inch)")
+		MenuListView(orderModel: .constant(OrderModel()))
     }
 }
 

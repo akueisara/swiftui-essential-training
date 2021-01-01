@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-	var pizzas: Int
 	@State var orderModel: OrderModel
 	@State var isMenuDisplayed: Bool = true
+	var pizzas: Int
     var body: some View {
 		print("hi")
 		return VStack {
@@ -20,9 +20,9 @@ struct ContentView: View {
 			Button(action:{self.isMenuDisplayed.toggle()}) {
 				PageTitleView(title: "Order Pizza", isDisplayingOrders: isMenuDisplayed)
 			}
-			MenuListView()
+			MenuListView(orderModel: $orderModel)
 				.layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
-			OrderListView()
+			OrderListView(orderModel: orderModel)
 				.layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
 //			Spacer()
 		}
@@ -33,8 +33,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
-			ContentView(pizzas: 5, orderModel: OrderModel())
-			ContentView(pizzas: 6, orderModel: OrderModel())
+			ContentView(orderModel: OrderModel(), pizzas: 5)
+			ContentView(orderModel: OrderModel(), pizzas: 6)
 				.colorScheme(.dark)
 				.background(Color.black)
 				.previewDevice("iPad Pro (9.7-inch)")
