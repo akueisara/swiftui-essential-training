@@ -18,6 +18,9 @@
 		9C8BD844259F1FD3006E3B0E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD843259F1FD3006E3B0E /* MapViewController.swift */; };
 		9C8BD847259F1FF0006E3B0E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD846259F1FF0006E3B0E /* MapView.swift */; };
 		9C8BD84B259F22AC006E3B0E /* CloseUpMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD84A259F22AC006E3B0E /* CloseUpMapView.swift */; };
+		9C8BD852259F25F7006E3B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD851259F25F6006E3B0E /* ViewController.swift */; };
+		9C8BD858259F2752006E3B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BD855259F26C7006E3B0E /* LaunchScreen.storyboard */; };
+		9C8BD859259F2752006E3B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BD856259F26C7006E3B0E /* Main.storyboard */; };
 		9CC4C089259E017C006B4924 /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C088259E017C006B4924 /* SelectedImageView.swift */; };
 		9CC4C08E259E0886006B4924 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C08B259E0886006B4924 /* MenuModel.swift */; };
 		9CC4C08F259E0886006B4924 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C08C259E0886006B4924 /* OrderModel.swift */; };
@@ -50,6 +53,9 @@
 		9C8BD843259F1FD3006E3B0E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9C8BD846259F1FF0006E3B0E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9C8BD84A259F22AC006E3B0E /* CloseUpMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseUpMapView.swift; sourceTree = "<group>"; };
+		9C8BD851259F25F6006E3B0E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C8BD855259F26C7006E3B0E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C8BD856259F26C7006E3B0E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CC4C088259E017C006B4924 /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
 		9CC4C08B259E0886006B4924 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		9CC4C08C259E0886006B4924 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
@@ -149,6 +155,8 @@
 		9CD241AA259CA942006E386E /* HuliPizza */ = {
 			isa = PBXGroup;
 			children = (
+				9C8BD855259F26C7006E3B0E /* LaunchScreen.storyboard */,
+				9C8BD856259F26C7006E3B0E /* Main.storyboard */,
 				9C8BD836259F0666006E3B0E /* RootTabView.swift */,
 				9C8BD82C259EE0AD006E3B0E /* AppDelegate.swift */,
 				9C8BD82F259EE0B2006E3B0E /* SceneDelegate.swift */,
@@ -161,6 +169,7 @@
 				9CC62199259DDDBC00648412 /* ContentHeadeView.swift */,
 				9CC621A5259DDFA300648412 /* PageTitleView.swift */,
 				9CC4C088259E017C006B4924 /* SelectedImageView.swift */,
+				9C8BD851259F25F6006E3B0E /* ViewController.swift */,
 				9CD241AF259CA944006E386E /* Assets.xcassets */,
 				9CD241B4259CA944006E386E /* Info.plist */,
 				9CD241B1259CA944006E386E /* Preview Content */,
@@ -233,6 +242,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8BD858259F2752006E3B0E /* LaunchScreen.storyboard in Resources */,
+				9C8BD859259F2752006E3B0E /* Main.storyboard in Resources */,
 				9CD241B3259CA944006E386E /* Preview Assets.xcassets in Resources */,
 				9CD241B0259CA944006E386E /* Assets.xcassets in Resources */,
 			);
@@ -263,6 +274,7 @@
 				9CC4C089259E017C006B4924 /* SelectedImageView.swift in Sources */,
 				9C8BD82A259EDE22006E3B0E /* MenuDetailView.swift in Sources */,
 				9C8BD847259F1FF0006E3B0E /* MapView.swift in Sources */,
+				9C8BD852259F25F7006E3B0E /* ViewController.swift in Sources */,
 				9CC4C090259E0886006B4924 /* HistoryModel.swift in Sources */,
 				9C8BD830259EE0B2006E3B0E /* SceneDelegate.swift in Sources */,
 				9CC621A9259DF2BC00648412 /* HistoryRowView.swift in Sources */,
