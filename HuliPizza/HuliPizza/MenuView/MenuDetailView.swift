@@ -12,16 +12,17 @@ import SwiftUI
 struct MenuDetailView: View {
 	@EnvironmentObject var settings: UserPreferences
 	@ObservedObject var orderModel: OrderModel
+	@State var didOrder: Bool = false
     var menuItem:MenuItem
     var formattedPrice:String{
         String(format:"%3.2f",menuItem.price)
     }
     func addItem(){
-		orderModel.add(menuID: menuItem.id)
+//		orderModel.add(menuID: menuItem.id)
+		didOrder = true
     }
     
 
-    
     var body: some View {
         VStack {
             PageTitleView(title: menuItem.name)
@@ -67,6 +68,12 @@ struct MenuDetailView: View {
                         .foregroundColor(Color("IP"))
                         .cornerRadius(5)
                 }
+//				.alert(isPresented: $didOrder) {
+//					Alert(title: Text("Pizza Ordered"), message: Text("Your ordered a " + self.menuItem.name))
+//				}
+				.sheet(isPresented: $didOrder) {
+					ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel)
+				}
                 Spacer()
             }
             .padding(.top)
