@@ -16,8 +16,8 @@ struct ContentView: View {
 		print("hi")
 		return VStack {
 			Text(pizzas > 5 ? "Helloo Pizza!!!!" : "Hello World")
-			ContentHeadeView()
-				.layoutPriority(2)
+//			ContentHeadeView()
+//				.layoutPriority(2)
 			Button(action:{self.isMenuDisplayed.toggle()}) {
 				PageTitleView(title: "Order Pizza", isDisplayingOrders: isMenuDisplayed)
 			}
