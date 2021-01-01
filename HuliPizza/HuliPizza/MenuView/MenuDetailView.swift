@@ -10,6 +10,7 @@ import SwiftUI
 
 ///A `View`for entering in an order. Takes basic information about the order from `menuItem`
 struct MenuDetailView: View {
+	@Environment(\.verticalSizeClass) var sizeClass
 	@EnvironmentObject var settings: UserPreferences
 	@ObservedObject var orderModel: OrderModel
 	@State var didOrder: Bool = false
@@ -24,53 +25,46 @@ struct MenuDetailView: View {
     }
     
 
-    var body: some View {
-        VStack {
-            PageTitleView(title: menuItem.name)
-            SelectedImageView(image: "\(menuItem.id)_250w")
-                .padding(5)
-                .layoutPriority(3)
-            
-            Text(menuItem.description)
-                .lineLimit(5)
-                .padding()
-                .layoutPriority(3)
-                
-            Spacer()
-			SizePickerView(size: $settings.size)
-			QuantityStepperView(quantity: $quantity)
-            HStack{
-                Text("Order:  \(formattedPrice)")
-                    .font(.headline)
-                Spacer()
-                Text("Order total: \(formattedPrice)" )
-                    .font(.headline)
-            }
-            .padding()
-            HStack{
-                Spacer()
-                Button(action: addItem) {
-                   Text("Add to order")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding()
-                    .background(Color("G4"))
-                        .foregroundColor(Color("IP"))
-                        .cornerRadius(5)
-                }
-//				.alert(isPresented: $didOrder) {
-//					Alert(title: Text("Pizza Ordered"), message: Text("Your ordered a " + self.menuItem.name))
-//				}
-				.sheet(isPresented: $didOrder) {
-					ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel: self.orderModel, quantity: self.$quantity, size: self.$settings.size)
+	var body: some View {
+		VStack(spacing:3) {
+			PageTitleView(title: menuItem.name)
+			
+			ZStack{
+				SelectedImageView(image: "\(menuItem.id)_250w")
+					.frame(minWidth:100, maxWidth:200)
+					.padding(10)
+				Button(action: addItem) {
+					Text("Add to order")
+						.font(sizeClass == .regular ? .title : .body)
+						.fontWeight(.bold)
+						.padding()
+						.foregroundColor(.white)
 				}
-                Spacer()
-            }
-            .padding(.top)
-            Spacer()
-        }
-        
-    }
+				.sheet(isPresented: $didOrder){
+					ConfirmView(menuID: self.menuItem.id, isPresented: self.$didOrder, orderModel:self.orderModel, quantity: self.$quantity,size:self.$settings.size)
+				}
+			}.layoutPriority(2)
+			Text(menuItem.description)
+				.lineLimit(5)
+				//  .padding(3)
+				.layoutPriority(3)
+			
+			//Spacer()
+			Group{
+				SizePickerView(size: $settings.size)
+				QuantityStepperView(quantity:$quantity)
+				HStack{
+					Text("Order:  \(formattedPrice)")
+						.font(.headline)
+					Spacer()
+					Text("Order total: " + orderModel.formattedTotal )
+						.font(.headline)
+				}
+			}
+			Spacer()
+		}.frame(minHeight:300, maxHeight:2732)
+		
+	}
 }
 
 struct MenuDetailView_Previews: PreviewProvider {

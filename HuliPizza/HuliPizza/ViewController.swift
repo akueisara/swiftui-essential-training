@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
 	
 	@IBSegueAction func historyViewSegue(_ coder: NSCoder) -> UIViewController? {
-		return UIHostingController(coder: coder, rootView: RootTabView())
+		return UIHostingController(coder: coder, rootView: RootTabView().environmentObject(UserPreferences()))
 	}
 }
 

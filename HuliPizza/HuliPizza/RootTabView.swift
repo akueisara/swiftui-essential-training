@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct RootTabView: View {
+	@Environment(\.horizontalSizeClass) var sizeClass
     var body: some View {
 		TabView {
-			ContentView(orderModel: OrderModel(), pizzas: 6)
-				.tabItem {
-					Image(systemName: "cart")
-					Text("Order")
-				}
+			if sizeClass == .compact {
+				ContentView(orderModel: OrderModel(), pizzas: 6)
+					.tabItem {
+						Image(systemName: "cart")
+						Text("Order")
+					}
+			} else {
+				LandscapeContentView(orderModel:OrderModel())
+							   .tabItem{
+								   Image(systemName:"cart")
+								   Text("Order")
+							   }
+			}
 			HistoryView()
 				.tabItem {
 					Image(systemName: "book")

@@ -21,6 +21,8 @@
 		9C8BD852259F25F7006E3B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD851259F25F6006E3B0E /* ViewController.swift */; };
 		9C8BD858259F2752006E3B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BD855259F26C7006E3B0E /* LaunchScreen.storyboard */; };
 		9C8BD859259F2752006E3B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BD856259F26C7006E3B0E /* Main.storyboard */; };
+		9C8BD85D259F294B006E3B0E /* LandscapeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD85C259F294B006E3B0E /* LandscapeContentView.swift */; };
+		9C8BD860259F2962006E3B0E /* LandscapeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BD85F259F2962006E3B0E /* LandscapeListView.swift */; };
 		9CC4C089259E017C006B4924 /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C088259E017C006B4924 /* SelectedImageView.swift */; };
 		9CC4C08E259E0886006B4924 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C08B259E0886006B4924 /* MenuModel.swift */; };
 		9CC4C08F259E0886006B4924 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4C08C259E0886006B4924 /* OrderModel.swift */; };
@@ -56,6 +58,8 @@
 		9C8BD851259F25F6006E3B0E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C8BD855259F26C7006E3B0E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C8BD856259F26C7006E3B0E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C8BD85C259F294B006E3B0E /* LandscapeContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeContentView.swift; sourceTree = "<group>"; };
+		9C8BD85F259F2962006E3B0E /* LandscapeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeListView.swift; sourceTree = "<group>"; };
 		9CC4C088259E017C006B4924 /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
 		9CC4C08B259E0886006B4924 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		9CC4C08C259E0886006B4924 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 		9CC62190259DDCCB00648412 /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
+				9C8BD85F259F2962006E3B0E /* LandscapeListView.swift */,
 				9CC62196259DDD6500648412 /* MenuListView.swift */,
 				9CC6219F259DDEBC00648412 /* MenuRowView.swift */,
 				9CC621A2259DDF2000648412 /* RatingsView.swift */,
@@ -165,6 +170,7 @@
 				9CC6218F259DDCC600648412 /* Model */,
 				9CC6218E259DDCBF00648412 /* HistoryView */,
 				9CD241AD259CA942006E386E /* ContentView.swift */,
+				9C8BD85C259F294B006E3B0E /* LandscapeContentView.swift */,
 				9CC621B1259DF4AD00648412 /* ListHeaderView.swift */,
 				9CC62199259DDDBC00648412 /* ContentHeadeView.swift */,
 				9CC621A5259DDFA300648412 /* PageTitleView.swift */,
@@ -256,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8BD860259F2962006E3B0E /* LandscapeListView.swift in Sources */,
 				9C8BD83E259F1D3C006E3B0E /* QuantityStepperView.swift in Sources */,
 				9CC6219D259DDE8000648412 /* OrderRowView.swift in Sources */,
 				9CC621AF259DF34E00648412 /* HistoryView.swift in Sources */,
@@ -269,6 +276,7 @@
 				9CC62193259DDCFE00648412 /* OrderListView.swift in Sources */,
 				9CC621A0259DDEBC00648412 /* MenuRowView.swift in Sources */,
 				9CC4C08F259E0886006B4924 /* OrderModel.swift in Sources */,
+				9C8BD85D259F294B006E3B0E /* LandscapeContentView.swift in Sources */,
 				9CC621A6259DDFA300648412 /* PageTitleView.swift in Sources */,
 				9CC6219A259DDDBC00648412 /* ContentHeadeView.swift in Sources */,
 				9CC4C089259E017C006B4924 /* SelectedImageView.swift in Sources */,
